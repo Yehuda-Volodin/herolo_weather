@@ -1,0 +1,56 @@
+.weatherContainer{
+    min-height: 100vh;
+    font-size: 1rem ;
+}
+.weatherHeader{    
+    animation-name: headerSlide;
+    animation-duration: 4s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+}
+.weatherHeaderLightTheme{
+    color: blue;
+}
+.weatherHeaderDarkTheme{
+    color: #61dafb;
+}
+@keyframes headerSlide {
+    from {padding-left: 0%;}
+    10% {padding-left: 0.5%;}
+    20% {padding-left: 1%;}
+    30% {padding-left: 1.5%;}
+    40% {padding-left: 2%;}
+    50% {padding-left: 2.5%;}
+    60% {padding-left: 3%;}
+    70% {padding-left: 3.5%;}
+    80% {padding-left: 4%;}
+    90% {padding-left: 4.5%;}
+    to {padding-left: 5%;}
+}
+
+.weatherNavLink{
+    color: #007bff !important;
+    font-weight: bold;
+    cursor: pointer;
+}
+.weatherLightTheme{
+    background-color: white;
+    background-image: url("weather_light_img.jpg");
+    background-size: cover;
+
+}
+.weatherDarkTheme{
+    background-color: #282c34;
+    color: white;
+    background-image: url("weather_img.jpg");
+    background-size: cover;
+}
+.homeWeatherText{
+    font-family: cursive;
+    font-size: 3rem ;
+}
+.favoritesWeatherText{
+    font-family: cursive;
+    font-size: 1.2rem ;
+}
